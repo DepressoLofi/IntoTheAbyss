@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Puppy : MonoBehaviour
 {
-/**
-
     [Header("Status")]
     [SerializeField] private int lifeCount;
     [SerializeField] private Vector3 lastCheckPoint;
@@ -16,6 +14,7 @@ public class Puppy : MonoBehaviour
     public InGameUI starSystem;
 
     public SkinnedMeshRenderer meshRenderer;
+    public GameObject flesh;
 
     private Collider puppyCollider;
 
@@ -40,19 +39,25 @@ public class Puppy : MonoBehaviour
         alive = false;
         puppyCollider.enabled = false;
 
-        //Dissolve effect
+
         meshRenderer.enabled = false;
-       
+        
+        if (flesh != null)
+        {
+            GameObject vfx = Instantiate(flesh, transform.position, transform.rotation);
+            Destroy(vfx, 0.9f);
+        }
+
         GameStateManager.Instance.PuppyDied();
         //fade screen
         lifeCount -= 1;
         if (lifeCount > 0)
         {
-            StartCoroutine(Respawn(0.5f));
+            StartCoroutine(Respawn(2f));
         }
         else
         {
-            //add game over script
+            //add game over script such as scene transition
             Debug.Log("You ran out of life");
         }
 
@@ -70,10 +75,6 @@ public class Puppy : MonoBehaviour
 
     }
 
-    IEnumerable Dissolve(float duration)
-    {
-        yield return Helpers.GetWait(duration);
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -100,5 +101,5 @@ public class Puppy : MonoBehaviour
         }
     }
 
-    **/
+
 }

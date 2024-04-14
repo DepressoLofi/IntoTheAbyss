@@ -22,8 +22,6 @@ public class PuppyMovement : MonoBehaviour
     private Transform dogMesh;
     private Animator animator;
     [Header("Some Components")]
-    public GameObject jumpVFX;
-    public Transform jumpPoint;
     public Transform shootPoint;
 
     [Header("Ground")]
@@ -149,11 +147,6 @@ public class PuppyMovement : MonoBehaviour
             else if (doubleJump && GameStateManager.Instance.havePower)
             {
                 Jump();
-                if (jumpVFX != null)
-                {
-                    Instantiate(jumpVFX, jumpPoint.position, jumpPoint.rotation);
-                }
-
                 doubleJump = false;
             }
         }
@@ -178,6 +171,7 @@ public class PuppyMovement : MonoBehaviour
     private void Jump()
     {
         rigid.velocity = Vector3.up * jumpForce;
+        SoundManager.PlaySound(SoundType.PUPPYJUMP);
     }
 
     private void ApplyGravity()
