@@ -41,7 +41,7 @@ public class ProjectileMove : MonoBehaviour
         if (vfxPrefab != null)
         {
             var hitVFX = Instantiate(vfxPrefab, pos, rot);
-            SoundManager.PlaySound(SoundType.PUPPYSHOOTHIT, 0.2f);
+            SoundManager.PlaySound(SoundType.PUPPYSHOOTHIT, 0.4f);
             Destroy(hitVFX, 0.8f);
         }
 
