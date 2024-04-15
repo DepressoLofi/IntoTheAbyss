@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6839472041161213220}
   - component: {fileID: 6839472041161213221}
+  - component: {fileID: 410075119}
   m_Layer: 0
-  m_Name: AudioSrc
+  m_Name: SoundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &6839472041161213221
 AudioSource:
@@ -128,3 +129,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &410075119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6839472041161213222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e4fcc13d30ea345bf5cea595fc4e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundList:
+  - name: PUPPYJUMP
+    sounds:
+    - {fileID: 8300000, guid: 4988a621f01c07c478b665014809d7d9, type: 3}
+  - name: PUPPYLAND
+    sounds:
+    - {fileID: 8300000, guid: aea622109f8b2ac4ca3281c6bc4ee03f, type: 3}
+  - name: PUPPYPOP
+    sounds:
+    - {fileID: 8300000, guid: 0e46991c24553d64aa137de0ddf52433, type: 3}
+  - name: PUPPYSHOOT
+    sounds:
+    - {fileID: 8300000, guid: a8fdc0627ecfcbf40a986caf619ab0fc, type: 3}
+  - name: PUPPYSHOOTHIT
+    sounds:
+    - {fileID: 8300000, guid: bb63d7b7ee8e3294aac6c9b3ccdbaa48, type: 3}

@@ -45,6 +45,7 @@ public class Puppy : MonoBehaviour
         if (flesh != null)
         {
             GameObject vfx = Instantiate(flesh, transform.position, transform.rotation);
+            SoundManager.PlaySound(SoundType.PUPPYPOP, 0.6f);
             Destroy(vfx, 0.9f);
         }
 
