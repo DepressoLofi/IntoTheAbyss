@@ -85,7 +85,8 @@ public class Puppy : MonoBehaviour
         }
         if (other.CompareTag("Star"))
         {
-            Destroy(other.gameObject);
+            Star starProps = other.GetComponent<Star>();
+            starProps.StarCollected();
             star++;
             if (starSystem != null)
             {
