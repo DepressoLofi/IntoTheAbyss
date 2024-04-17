@@ -29,7 +29,6 @@ public class PuppyMovement : MonoBehaviour
     [SerializeField] private bool doubleJump;
     public LayerMask whatIsGround;
     public bool onPlatform;
-    private Vector3 groundCheckOffset = new Vector3(0, 0, 0.1f);
 
     [Header("Slope Handling")]
     public float maxSlopeAngle;
@@ -54,7 +53,7 @@ public class PuppyMovement : MonoBehaviour
 
     void Update()
     {
-        grounded = Physics.Raycast(transform.position - groundCheckOffset, Vector3.down, 1 * 0.5f + 0.29f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, Vector3.down, 1 * 0.5f + 0.29f, whatIsGround);
 
         if (grounded)
         {
@@ -218,6 +217,6 @@ public class PuppyMovement : MonoBehaviour
 
         Gizmos.color = grounded ? Color.green : Color.red;
 
-        Gizmos.DrawRay(transform.position - groundCheckOffset, Vector3.down * (1 * 0.5f + 0.29f));
+        Gizmos.DrawRay(transform.position, Vector3.down * (1 * 0.5f + 0.29f));
     }
 }
