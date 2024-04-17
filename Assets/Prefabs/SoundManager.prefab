@@ -157,3 +157,9 @@ MonoBehaviour:
   - name: PUPPYSHOOTHIT
     sounds:
     - {fileID: 8300000, guid: bb63d7b7ee8e3294aac6c9b3ccdbaa48, type: 3}
+  - name: STAR
+    sounds:
+    - {fileID: 8300000, guid: 03ca64a9893795247bd84e4716f6e96c, type: 3}
+  - name: CHECKPOINT
+    sounds:
+    - {fileID: 8300000, guid: e2c72af6f9f97c84796e5288b473c33e, type: 3}

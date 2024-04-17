@@ -172,7 +172,7 @@ public class PuppyMovement : MonoBehaviour
     private void Jump()
     {
         rigid.velocity = Vector3.up * jumpForce;
-        SoundManager.PlaySound(SoundType.PUPPYJUMP, 0.5f);
+        SoundManager.PlaySound(SoundType.PUPPYJUMP, 1f);
     }
 
     private void ApplyGravity()

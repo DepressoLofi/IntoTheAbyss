@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: 1
-  volume: 0.5
+  volume: 1
 --- !u!1101 &-4261039317265671926
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
