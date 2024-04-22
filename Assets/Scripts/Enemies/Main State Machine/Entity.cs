@@ -19,15 +19,17 @@ public class Entity : MonoBehaviour
 
     private Vector3 velocityWorkspace;
     private int currentHealth;
+    public bool alive = true;
 
     // Start is called before the first frame update
     public virtual void Awake()
     {
         facingDirection = 1;
         currentHealth = entityData.hitPoint;
+        mesh = transform.Find("Mesh").gameObject;
         Collider = GetComponent<Collider>();
         rb = GetComponent<Rigidbody>();
-        anim = GetComponent<Animator>();
+        // anim = GetComponent<Animator>();
 
         stateMachine = new FiniteStateMachine();
     }
@@ -47,6 +49,7 @@ public class Entity : MonoBehaviour
     public virtual void SetVelocity(float velocity)
     {
         velocityWorkspace.Set(rb.velocity.x, rb.velocity.y, facingDirection *  velocity);
+        rb.velocity = velocityWorkspace;
     }
 
     public virtual bool CheckWall()
@@ -70,7 +73,8 @@ public class Entity : MonoBehaviour
         currentHealth -= 1;
         if(currentHealth <= 0) 
         {
-            Destroy(gameObject);
+            alive = false;
+            
         }
     }
 
@@ -100,6 +104,14 @@ public class Entity : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    public virtual void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Projectile"))
+        {
+            Damaged();
         }
     }
 
