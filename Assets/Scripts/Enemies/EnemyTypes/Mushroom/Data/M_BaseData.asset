@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e8bc335226da149b6cc9ab47c13520, type: 3}
   m_Name: M_BaseData
   m_EditorClassIdentifier: 
-  hitPoint: 1
+  hitPoint: 2
   wallCheckDistance: 0.2
   ledgeCheckDistance: 0.4
   agroDistance: 3

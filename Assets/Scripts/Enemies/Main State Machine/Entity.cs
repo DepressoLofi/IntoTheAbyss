@@ -11,7 +11,7 @@ public class Entity : MonoBehaviour
     public Rigidbody rb { get; private set;  }
     public Collider Collider { get; private set; }
     public GameObject mesh { get; private set; }
-    public Animator anim { get; private set; }
+    public Animator anim;
 
     [SerializeField] private Transform wallCheck;
     [SerializeField] private Transform ledgeCheck;
@@ -29,7 +29,6 @@ public class Entity : MonoBehaviour
         mesh = transform.Find("Mesh").gameObject;
         Collider = GetComponent<Collider>();
         rb = GetComponent<Rigidbody>();
-        // anim = GetComponent<Animator>();
 
         stateMachine = new FiniteStateMachine();
     }

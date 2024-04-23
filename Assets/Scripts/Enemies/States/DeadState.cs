@@ -10,14 +10,11 @@ public class DeadState : State
         this.stateData = stateData; 
     }
 
-    public override void DoChecks()
-    {
-        base.DoChecks();
-    }
-
     public override void Enter()
     {
         base.Enter();
+        entity.Collider.enabled = false;
+        entity.rb.constraints |= RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
     }
 
     public override void Exit()
@@ -34,4 +31,11 @@ public class DeadState : State
     {
         base.PhysicUpdate();
     }
+
+    public override void DoChecks()
+    {
+        base.DoChecks();
+
+    }
+
 }

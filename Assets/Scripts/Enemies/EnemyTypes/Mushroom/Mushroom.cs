@@ -27,8 +27,7 @@ public class Mushroom : Entity
         base.Update();
         if (!alive)
         {
-            Debug.Log("Enemy died");
-            Destroy(gameObject);
+            stateMachine.ChangeState(DeadState);
         }
     }
 
