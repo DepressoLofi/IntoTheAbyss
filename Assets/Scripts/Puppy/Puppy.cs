@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,22 +37,26 @@ public class Puppy : MonoBehaviour
 
     private void Die()
     {
-        alive = false;
-        puppyCollider.enabled = false;
-
-
-        meshRenderer.enabled = false;
-        
-        if (flesh != null)
+        if (alive)
         {
-            GameObject vfx = Instantiate(flesh, transform.position, transform.rotation);
-            SoundManager.PlaySound(SoundType.PUPPYPOP, 0.5f);
-            Destroy(vfx, 0.9f);
-        }
+            lifeCount -= 1;
+            alive = false;
+            puppyCollider.enabled = false;
+            meshRenderer.enabled = false;
 
-        GameStateManager.Instance.PuppyDied();
+            if (flesh != null)
+            {
+                GameObject vfx = Instantiate(flesh, transform.position, transform.rotation);
+                SoundManager.PlaySound(SoundType.PUPPYPOP, 0.5f);
+                Destroy(vfx, 0.9f);
+            }
+            Debug.Log("Die time in" + lifeCount);
+
+            GameStateManager.Instance.PuppyDied();
+        }
+        
         //fade screen
-        lifeCount -= 1;
+        
         if (lifeCount > 0)
         {
             StartCoroutine(Respawn(2f));

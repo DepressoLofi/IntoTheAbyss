@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class M_DeadState : DeadState
+public class SK_DetectedState : DetectedState
 {
-    private Mushroom enemy;
-    public M_DeadState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_DeadState stateData, Mushroom enemy) : base(entity, stateMachine, animBoolName, stateData)
+    private Skeleton enemy;
+    public SK_DetectedState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_DetectedState stateData, Skeleton enemy) : base(entity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;
     }
@@ -13,6 +13,7 @@ public class M_DeadState : DeadState
     public override void Enter()
     {
         base.Enter();
+        entity.SetVelocity(0);
     }
 
     public override void Exit()
@@ -23,6 +24,10 @@ public class M_DeadState : DeadState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+        if (performAction)
+        {
+            stateMachine.ChangeState(enemy.ChargeState);
+        }
     }
 
     public override void PhysicUpdate()
@@ -34,4 +39,5 @@ public class M_DeadState : DeadState
     {
         base.DoChecks();
     }
+
 }
