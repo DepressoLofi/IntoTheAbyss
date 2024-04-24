@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3322620627449178714}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LedgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 3322620627598832994}
   - component: {fileID: 3322620627598832993}
   - component: {fileID: 3322620627598833004}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MushroomEnemy
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -84,6 +84,7 @@ MonoBehaviour:
   ledgeCheck: {fileID: 3322620627449178714}
   playerCheck: {fileID: 3322620627969113627}
   alive: 1
+  turnBack: 1
   idleStateData: {fileID: 11400000, guid: d65fc96052fb1fd458bac34edbf49dd4, type: 2}
   moveStateData: {fileID: 11400000, guid: f31501712f5c31d4ea5924367564b05a, type: 2}
   deadStateData: {fileID: 11400000, guid: ec0977bbad7f9234fb1002d65890659e, type: 2}
@@ -144,7 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3322620627969113627}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3322620628141897554}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,9 +206,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3322620627598832995}
     m_Modifications:
+    - target: {fileID: 100000, guid: 10a1e47d0d282414481a0b2a67c79333, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 10a1e47d0d282414481a0b2a67c79333, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 10a1e47d0d282414481a0b2a67c79333, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 10a1e47d0d282414481a0b2a67c79333, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 10a1e47d0d282414481a0b2a67c79333, type: 3}
       propertyPath: m_Name
       value: Mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 10a1e47d0d282414481a0b2a67c79333, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 10a1e47d0d282414481a0b2a67c79333, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 10a1e47d0d282414481a0b2a67c79333, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

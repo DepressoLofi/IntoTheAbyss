@@ -31,7 +31,7 @@ public class PuppyShoot : MonoBehaviour
         {
             vfx = Instantiate(effectToSpawn, shootPoint.position, shootPoint.rotation);
             SoundManager.PlaySound(SoundType.PUPPYSHOOT, 1f);
-            Destroy(vfx, 1f);
+            Destroy(vfx, 0.5f);
 
         }
     }

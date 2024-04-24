@@ -12,13 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e8bc335226da149b6cc9ab47c13520, type: 3}
   m_Name: SK_BaseData
   m_EditorClassIdentifier: 
-  hitPoint: 1
-  wallCheckDistance: 0.2
+  hitPoint: 2
+  wallCheckDistance: 0.4
   ledgeCheckDistance: 0.4
-  agroDistance: 3
+  agroDistance: 15
+  maxAgroDistance: 20
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   whatIsPlayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
+  whatIsMonster:
+    serializedVersion: 2
+    m_Bits: 128

@@ -13,7 +13,8 @@ public enum SoundType
     PUPPYSHOOTHIT,
     STAR,
     CHECKPOINT,
-    POOF
+    POOF,
+    SURPRISE
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]

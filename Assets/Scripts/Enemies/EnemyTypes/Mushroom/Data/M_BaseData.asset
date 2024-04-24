@@ -16,9 +16,13 @@ MonoBehaviour:
   wallCheckDistance: 0.2
   ledgeCheckDistance: 0.4
   agroDistance: 3
+  maxAgroDistance: 10
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 256
+  whatIsMonster:
+    serializedVersion: 2
+    m_Bits: 128

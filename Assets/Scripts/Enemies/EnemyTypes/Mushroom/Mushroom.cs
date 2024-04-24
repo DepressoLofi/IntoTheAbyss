@@ -31,14 +31,5 @@ public class Mushroom : Entity
         }
     }
 
-    public override void OnCollisionEnter(Collision collision)
-    {
-        base.OnCollisionEnter(collision);
-        if (collision.gameObject.CompareTag("Monster"))
-        {
-            IdleState.SetTurnAfterIdle(true);
-            stateMachine.ChangeState(IdleState);
-        }
-    }
    
 }

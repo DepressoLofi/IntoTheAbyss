@@ -31,6 +31,7 @@ public class SK_ChargeState : ChargeState
             }
             else
             {
+                enemy.IdleState.SetTurnAfterIdle(false);
                 stateMachine.ChangeState(enemy.IdleState);
             }
         }
@@ -39,7 +40,7 @@ public class SK_ChargeState : ChargeState
     public override void PhysicUpdate()
     {
         base.PhysicUpdate();
-        if(isDetectingWall || !isDetectingLedge)
+        if(isDetectingWall || !isDetectingLedge || isDetectingMonster)
         {
             entity.SetVelocity(0);
             enemy.IdleState.SetTurnAfterIdle(true);

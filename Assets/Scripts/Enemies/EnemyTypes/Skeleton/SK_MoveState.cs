@@ -13,6 +13,7 @@ public class SK_MoveState : MoveState
     public override void Enter()
     {
         base.Enter();
+        enemy.turnBack = false;
     }
 
     public override void Exit()
@@ -27,12 +28,18 @@ public class SK_MoveState : MoveState
         {
             stateMachine.ChangeState(enemy.DetectedState);
         }
+        else if (entity.turnBack)
+        {
+            entity.turnBack = false;
+            entity.Turn();
+        }
+
     }
 
     public override void PhysicUpdate()
     {
         base.PhysicUpdate();
-        if(isDetectingWall || !isDetectingLedge)
+        if(isDetectingWall || !isDetectingLedge || isDetectingMonster)
         {
             enemy.IdleState.SetTurnAfterIdle(true);
             stateMachine.ChangeState(enemy.IdleState);

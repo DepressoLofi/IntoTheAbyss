@@ -50,7 +50,6 @@ public class Puppy : MonoBehaviour
                 SoundManager.PlaySound(SoundType.PUPPYPOP, 0.5f);
                 Destroy(vfx, 0.9f);
             }
-            Debug.Log("Die time in" + lifeCount);
 
             GameStateManager.Instance.PuppyDied();
         }

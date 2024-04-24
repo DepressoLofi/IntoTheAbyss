@@ -10,7 +10,9 @@ public class D_Entity : ScriptableObject
     public float ledgeCheckDistance = 0.4f;
 
     public float agroDistance = 3f;
+    public float maxAgroDistance = 10f;
 
     public LayerMask whatIsGround;
     public LayerMask whatIsPlayer;
+    public LayerMask whatIsMonster;
 }

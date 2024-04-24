@@ -29,12 +29,13 @@ public class M_MoveState : MoveState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+
     }
 
     public override void PhysicUpdate()
     {
         base.PhysicUpdate();
-        if(isDetectingWall || !isDetectingLedge)
+        if(isDetectingWall || !isDetectingLedge || isDetectingMonster)
         {
             enemy.IdleState.SetTurnAfterIdle(true);
             stateMachine.ChangeState(enemy.IdleState);
