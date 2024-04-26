@@ -5,12 +5,18 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     private bool triggered;
+    [SerializeField] private Light lightComponent;
 
     public Renderer rend;
     public Material litMaterial;
 
     void Start()
     {
+        if(lightComponent != null)
+        {
+            lightComponent.enabled = false;
+        }
+        
         triggered = false;
     }
     private void LightUp()
@@ -23,6 +29,11 @@ public class CheckPoint : MonoBehaviour
                 materials[1] = litMaterial;
                 rend.materials = materials;
             }
+            if (lightComponent != null)
+            {
+                lightComponent.enabled = true;
+            }
+
         }
     } 
 
