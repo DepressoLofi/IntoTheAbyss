@@ -9,7 +9,6 @@ public class SkeletonEvent : MonoBehaviour
     public void MushroomDie()
     {
         var dieVfx = Instantiate(vfx, transform.position + transform.forward * -0.5f, Quaternion.Euler(Skeleton.transform.rotation.eulerAngles));
-        SoundManager.PlaySound(SoundType.POOF, 0.4f);
         Destroy(dieVfx, 0.6f);
         Destroy(Skeleton);
     }

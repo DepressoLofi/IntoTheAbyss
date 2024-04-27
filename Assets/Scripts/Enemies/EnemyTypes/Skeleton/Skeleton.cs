@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Skeleton : Entity
 {
+    private AudioSource detectSfx;
     public SK_MoveState MoveState { get; private set; }
     public SK_IdleState IdleState { get; private set; }
     public SK_DetectedState DetectedState { get; private set; }
@@ -19,6 +20,8 @@ public class Skeleton : Entity
     public override void Awake()
     {
         base.Awake();
+        detectSfx = GetComponent<AudioSource>();    
+
         MoveState = new SK_MoveState(this, stateMachine, "move", moveStateData, this);
         IdleState = new SK_IdleState(this, stateMachine,"idle", idleStateData, this);
         DetectedState = new SK_DetectedState(this, stateMachine,"detect", detectedStateData, this);
@@ -44,6 +47,12 @@ public class Skeleton : Entity
             IdleState.SetTurnAfterIdle(true);
             stateMachine.ChangeState(IdleState);
         }
+    }
+
+    public void PlaySound()
+    {
+        detectSfx.Play();
+        
     }
 
 

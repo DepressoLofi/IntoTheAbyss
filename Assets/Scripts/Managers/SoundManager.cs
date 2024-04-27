@@ -13,9 +13,8 @@ public enum SoundType
     PUPPYSHOOTHIT,
     STAR,
     CHECKPOINT,
-    POOF,
-    SURPRISE
 }
+// Only dog sfx and ui sfx
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour

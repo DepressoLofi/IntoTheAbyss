@@ -14,7 +14,7 @@ public class SK_DetectedState : DetectedState
     {
         base.Enter();
         entity.SetVelocity(0);
-        SoundManager.PlaySound(SoundType.SURPRISE, 0.8f);
+        enemy.PlaySound();
         
     }
 

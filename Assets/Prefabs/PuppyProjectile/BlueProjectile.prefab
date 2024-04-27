@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4281923920729631135}
   - component: {fileID: 4281923920729631133}
   - component: {fileID: 4281923920729631132}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4839,7 +4839,7 @@ GameObject:
   - component: {fileID: 4281923921225056824}
   - component: {fileID: 4281923921225057222}
   - component: {fileID: 4281923921225056825}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9666,7 +9666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4281923921444521037}
   - component: {fileID: 4281923921444521034}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9813,7 +9813,7 @@ GameObject:
   - component: {fileID: -7472303273292831702}
   - component: {fileID: 2384095075276672890}
   - component: {fileID: 62082673599479562}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BlueProjectile
   m_TagString: Projectile
   m_Icon: {fileID: 0}
