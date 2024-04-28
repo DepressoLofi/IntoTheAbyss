@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 1821281271462005884}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2219365146242266062
 Rigidbody:
@@ -123,7 +123,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5581e9aa6ea2be84797491af233fc8b7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1362,6 +1362,7 @@ MonoBehaviour:
   Wizard: {fileID: 2219365146242266061}
   vfx: {fileID: 5400434478881440056, guid: 4853e9df356264f439f6dffc7efc528b, type: 3}
   shootPoint: {fileID: 2219365146630882603}
+  fireVfx: {fileID: 7468313621726408997, guid: 9e8e0e6e97609fb4a83e156da0ccdd85, type: 3}
 --- !u!82 &2219365146938004041
 AudioSource:
   m_ObjectHideFlags: 0
