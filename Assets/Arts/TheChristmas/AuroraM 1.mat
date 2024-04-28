@@ -61,6 +61,6 @@ Material:
     - _Speed: 0
     m_Colors:
     - _Color: {r: 2.2665265, g: 0, b: 5.6568537, a: 0}
-    - _Speed: {r: 0, g: -0.1, b: 0, a: 0}
+    - _Speed: {r: 0, g: -0.05, b: 0, a: 0}
     - _Tiling: {r: 10, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []

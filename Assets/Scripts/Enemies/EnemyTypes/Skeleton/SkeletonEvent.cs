@@ -6,7 +6,7 @@ public class SkeletonEvent : MonoBehaviour
 {
     public GameObject Skeleton;
     public GameObject vfx;
-    public void MushroomDie()
+    public void Die()
     {
         var dieVfx = Instantiate(vfx, transform.position + transform.forward * -0.5f, Quaternion.Euler(Skeleton.transform.rotation.eulerAngles));
         Destroy(dieVfx, 0.6f);

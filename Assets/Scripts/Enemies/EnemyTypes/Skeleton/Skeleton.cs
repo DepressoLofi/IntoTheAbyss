@@ -39,16 +39,6 @@ public class Skeleton : Entity
         }
     }
 
-    public override void OnCollisionEnter(Collision collision)
-    {
-        base.OnCollisionEnter(collision);
-        if (collision.gameObject.CompareTag("Monster"))
-        {
-            IdleState.SetTurnAfterIdle(true);
-            stateMachine.ChangeState(IdleState);
-        }
-    }
-
     public void PlaySound()
     {
         detectSfx.Play();
