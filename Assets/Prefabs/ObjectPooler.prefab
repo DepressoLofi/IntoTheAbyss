@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5394144130774173531
 MonoBehaviour:
@@ -48,4 +48,8 @@ MonoBehaviour:
   - tag: SnowBall
     prefab: {fileID: 7468313621726408997, guid: e71d56d9c870cd54a87be805f22377c6,
       type: 3}
-    size: 50
+    size: 10
+  - tag: FireBall
+    prefab: {fileID: 7468313621726408997, guid: 9e8e0e6e97609fb4a83e156da0ccdd85,
+      type: 3}
+    size: 10

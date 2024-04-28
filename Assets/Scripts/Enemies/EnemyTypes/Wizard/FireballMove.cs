@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class SnowballMove : MonoBehaviour, IPooledObject
+public class FireballMove : MonoBehaviour
 {
     public float speed;
-    private float runSpeed;
     public GameObject vfxPrefab;
 
-    public float lifetime = 2.0f;
-    private float timer = 0.0f;
-
-    public void OnObjectSpawn()
+    void Start()
     {
         if (vfxPrefab != null)
         {
@@ -20,32 +15,23 @@ public class SnowballMove : MonoBehaviour, IPooledObject
             muzzleVFX.transform.forward = gameObject.transform.forward;
             Destroy(muzzleVFX, 0.8f);
         }
-        timer = 0f;
-        runSpeed = speed;
     }
+
 
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer >= lifetime)
+        if (speed != 0)
         {
-            gameObject.SetActive(false);
+            transform.position += transform.forward * (speed * Time.deltaTime);
         }
-
-    }
-
-    void FixedUpdate()
-    {
-        if (runSpeed != 0)
+        else
         {
-            transform.position += transform.forward * (runSpeed * Time.deltaTime);
+            Debug.Log("No Speed");
         }
     }
-    
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
-        runSpeed = 0;
+        speed = 0;
         ContactPoint contact = collision.contacts[0];
         Quaternion rot = Quaternion.FromToRotation(Vector2.up, contact.normal);
         Vector3 pos = contact.point;
@@ -54,11 +40,9 @@ public class SnowballMove : MonoBehaviour, IPooledObject
         if (vfxPrefab != null)
         {
             var hitVFX = Instantiate(vfxPrefab, pos, rot);
-            //TO-DO to add sfx
             Destroy(hitVFX, 0.8f);
         }
-        gameObject.SetActive(false);
 
+        Destroy(gameObject);
     }
-
 }

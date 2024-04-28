@@ -8,6 +8,7 @@ public class WizardEvents : MonoBehaviour
     public GameObject vfx;
 
     public Transform shootPoint;
+    public GameObject fireVfx;
     private AudioSource fireSfx;
 
     private void Start()
@@ -25,6 +26,10 @@ public class WizardEvents : MonoBehaviour
     public void Shoot()
     {
         fireSfx.Play();
-        ObjectPooler.Instance.SpawnFromPool("FireBall", shootPoint.position, shootPoint.rotation);
+
+        GameObject startVfx;
+        startVfx = Instantiate(fireVfx, shootPoint.position, shootPoint.rotation);
+        Destroy(startVfx, 1.7f);
+
     }
 }
