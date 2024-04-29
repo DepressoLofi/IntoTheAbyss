@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &6839472041161213221
 AudioSource:
@@ -148,7 +148,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4988a621f01c07c478b665014809d7d9, type: 3}
   - name: PUPPYLAND
     sounds:
-    - {fileID: 8300000, guid: aea622109f8b2ac4ca3281c6bc4ee03f, type: 3}
+    - {fileID: 8300000, guid: b7693bd7a6363324cb8d17bb91d2f47f, type: 3}
   - name: PUPPYPOP
     sounds:
     - {fileID: 8300000, guid: 0e46991c24553d64aa137de0ddf52433, type: 3}
@@ -164,9 +164,3 @@ MonoBehaviour:
   - name: CHECKPOINT
     sounds:
     - {fileID: 8300000, guid: 625445a0a2d2cce48b23384eb036c359, type: 3}
-  - name: POOF
-    sounds:
-    - {fileID: 8300000, guid: ac2566b6bc774a74dae9c8a78ed458b8, type: 3}
-  - name: SURPRISE
-    sounds:
-    - {fileID: 8300000, guid: 5581e9aa6ea2be84797491af233fc8b7, type: 3}

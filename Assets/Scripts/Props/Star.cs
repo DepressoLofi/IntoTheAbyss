@@ -15,7 +15,7 @@ public class Star : MonoBehaviour
         var burst = Instantiate(burstPrefab, transform.position, transform.rotation);
         Destroy(burst, 5f);
         Destroy(gameObject);
-        SoundManager.PlaySound(SoundType.STAR, 1f);
+        SoundManager.PlaySound(SoundType.STAR, 0.8f);
     }
 
 }

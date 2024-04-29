@@ -47,7 +47,7 @@ public class CheckPoint : MonoBehaviour
             puppy.SetCheckpoint(transform.position);
             triggered = true;
             LightUp();
-            SoundManager.PlaySound(SoundType.CHECKPOINT, 0.35f);
+            SoundManager.PlaySound(SoundType.CHECKPOINT, 0.25f);
 
         }
     }
