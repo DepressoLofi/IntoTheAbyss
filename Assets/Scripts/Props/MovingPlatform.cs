@@ -6,9 +6,12 @@ public class MovingPlatform : MonoBehaviour
 {
     public Transform posA, posB;
     public bool goToB;
-    public int speed;
+    public float speed;
+    public float waitTime = 1f;
+
     Vector3 targetPos;
     private bool isMoving;
+
 
     void Start()
     {
@@ -47,7 +50,7 @@ public class MovingPlatform : MonoBehaviour
     IEnumerator StopForMoment()
     {
         isMoving = false;
-        yield return Helpers.GetWait(1);
+        yield return Helpers.GetWait(waitTime);
         isMoving = true;
     }
 
