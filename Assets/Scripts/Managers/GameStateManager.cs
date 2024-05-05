@@ -6,6 +6,8 @@ public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance = null;
 
+    private GameObject player;
+
     public bool canInput;
     public bool freeze;
     public bool havePower;
@@ -16,6 +18,16 @@ public class GameStateManager : MonoBehaviour
         {
             Instance = this;
         }
+    }
+
+    private void Start()
+    {
+        GameObject puppyObject = GameObject.Find("Puppy");
+        if (puppyObject != null )
+        {
+            player = puppyObject;
+        }
+        
     }
 
     public void IntroScene()
@@ -37,11 +49,14 @@ public class GameStateManager : MonoBehaviour
     {
         canInput = false;
         freeze = true;
+        player.transform.SetParent(null);
+
     }
 
     public void PuppyRevived()
     {
         canInput = true;
         freeze = false;
+
     }
 }

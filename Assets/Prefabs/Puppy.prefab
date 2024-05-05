@@ -68,7 +68,7 @@ Transform:
   - {fileID: 7385646979526803955}
   - {fileID: 7385646979795305520}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &7385646980205285977
 Rigidbody:
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c1d19020fd87149bf3d8663ff6ce2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 9
   jumpForce: 20
   fallMultiplier: 0.6
   pullMultiplier: 1

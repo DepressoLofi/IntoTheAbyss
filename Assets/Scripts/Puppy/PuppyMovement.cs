@@ -7,6 +7,7 @@ public class PuppyMovement : MonoBehaviour
 {
     [Header("Movement stats")]
     public float speed;
+    private float tempSpeed;
     public float jumpForce;
     public float fallMultiplier;
     public float pullMultiplier;
@@ -37,6 +38,7 @@ public class PuppyMovement : MonoBehaviour
 
     private void Awake()
     {
+        tempSpeed = speed;
         rigid = GetComponent<Rigidbody>();
         puppyCollider = GetComponent<Collider>();
 
@@ -76,8 +78,7 @@ public class PuppyMovement : MonoBehaviour
         }
 
 
-        animator.SetFloat("movement", movement.sqrMagnitude);
-        animator.SetBool("grounded", grounded);
+        
 
 
         if (movement.z > 0)
@@ -113,10 +114,16 @@ public class PuppyMovement : MonoBehaviour
         if (GameStateManager.Instance.freeze)
         {
             rigid.constraints |= RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+            speed = 0f;
+
         }
         else
         {
             rigid.constraints &= ~(RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ);
+            speed = tempSpeed;
+            animator.SetFloat("movement", movement.sqrMagnitude);
+            animator.SetBool("grounded", grounded);
+
         }
 
         MyInput();
