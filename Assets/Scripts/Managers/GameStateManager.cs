@@ -35,7 +35,7 @@ public class GameStateManager : MonoBehaviour
         havePower = false;
     }
 
-    public void backToNormal()
+    public void BackToNormal()
     {
         canInput = true;
     }

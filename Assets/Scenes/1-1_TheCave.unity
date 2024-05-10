@@ -14559,12 +14559,12 @@ PrefabInstance:
     - target: {fileID: 6612296652370713624, guid: 86946738359394e4c9539003223fc16e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.39
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6612296652370713624, guid: 86946738359394e4c9539003223fc16e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 56.04
+      value: -57.3
       objectReference: {fileID: 0}
     - target: {fileID: 6612296652370713624, guid: 86946738359394e4c9539003223fc16e,
         type: 3}
@@ -37604,7 +37604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385018377}
   m_LocalRotation: {x: 0.06162845, y: -0.70441604, z: 0.06162845, w: 0.70441604}
-  m_LocalPosition: {x: 10.848078, y: 6.3864822, z: -76.200005}
+  m_LocalPosition: {x: 10.848078, y: 6.3864822, z: -74.200005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -57748,7 +57748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064992402}
   m_LocalRotation: {x: 0.06162845, y: -0.70441604, z: 0.06162845, w: 0.70441604}
-  m_LocalPosition: {x: 10.848078, y: 6.3864822, z: -76.200005}
+  m_LocalPosition: {x: 10.848078, y: 6.3864822, z: -74.200005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58916,12 +58916,12 @@ PrefabInstance:
     - target: {fileID: 6612296652370713624, guid: 86946738359394e4c9539003223fc16e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 31.89
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 6612296652370713624, guid: 86946738359394e4c9539003223fc16e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 174.5
+      value: -62.9
       objectReference: {fileID: 0}
     - target: {fileID: 6612296652370713624, guid: 86946738359394e4c9539003223fc16e,
         type: 3}
@@ -59025,7 +59025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 1, y: 2.5, z: -0.9999985}
+  m_TrackedObjectOffset: {x: 1, y: 2.5, z: 0.9999996}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -60024,6 +60024,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FinishScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2801305447506338727, guid: a10c6298025d6f143b6299e7f550405f,
+        type: 3}
+      propertyPath: levelNum
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2801305447506338731, guid: a10c6298025d6f143b6299e7f550405f,
         type: 3}
