@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,16 @@ public class GameManager : MonoBehaviour
     public bool levelFour = false;
     public int levelFourScore = 0;
 
+    public int newStar = 0;
+    public int finishedLevel;
+    public int NewStarGained(int stars, int levelStar)
+    {
+        if (levelStar < stars) {
+            return stars - levelStar;
+        }
+        return 0;
+    }
+
     private void Awake()
     {
         if (Instance == null)
@@ -37,7 +48,9 @@ public class GameManager : MonoBehaviour
         {
             if (levelOneScore < stars)
             {
-                levelOneScore = stars;
+                newStar = NewStarGained(stars, levelOneScore);
+                
+
             }
             levelTwo = true;
             
@@ -45,7 +58,9 @@ public class GameManager : MonoBehaviour
         {
             if (levelTwoScore < stars)
             {
-                levelTwoScore = stars;
+                newStar = NewStarGained(stars, levelTwoScore);
+               
+
             }
             levelThree = true;
             
@@ -53,7 +68,9 @@ public class GameManager : MonoBehaviour
         {
             if (levelThreeScore < stars)
             {
-                levelThreeScore = stars;
+                newStar = NewStarGained(stars, levelThreeScore);
+                
+
             }
             levelFour = true;
 
@@ -61,14 +78,15 @@ public class GameManager : MonoBehaviour
         {
             if (levelFourScore < stars)
             {
-                levelFourScore = stars;
+                newStar = NewStarGained(stars, levelFourScore);
+                
             }
             
         }
-        else
-        {
-            return;
-        }
+        finishedLevel = levelNum;
+        Debug.Log(newStar);
+
+        
 
 
     }
