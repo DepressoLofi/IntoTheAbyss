@@ -26,6 +26,10 @@ public class SK_IdleState : IdleState
         if (isIdleTimeOver)
         {
             stateMachine.ChangeState(enemy.MoveState);
+        } else if (entity.turnBack)
+        {
+            entity.turnBack = false;
+            isIdleTimeOver = true;
         }
     }
 
