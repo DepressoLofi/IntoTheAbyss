@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public int newStar = 0;
     public int finishedLevel;
+
     public int NewStarGained(int stars, int levelStar)
     {
         if (levelStar < stars) {
