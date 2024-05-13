@@ -29,6 +29,11 @@ public class W_IdleState : IdleState
         {
             stateMachine.ChangeState(enemy.MoveState);
         }
+        else if (entity.turnBack)
+        {
+            entity.turnBack = false;
+            isIdleTimeOver = true;
+        }
 
     }
 
