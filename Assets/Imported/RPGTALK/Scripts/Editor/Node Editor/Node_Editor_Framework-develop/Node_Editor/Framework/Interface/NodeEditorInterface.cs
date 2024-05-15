@@ -456,7 +456,7 @@ namespace NodeEditorFramework.Standard
                 //the follow up node is exclusive to the prior node? if it isn't, we don't want to move it. Just add the connection
                 if (follow.followUpTitle.IndexOf("FollowUp_") != -1 && follow.followUpTitle.IndexOf("Choice_" + follow.identifier.ToString()) != -1)
                 {
-                    //TODO: Move the followups
+   
 
                 }
 

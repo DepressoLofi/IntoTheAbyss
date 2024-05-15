@@ -640,7 +640,7 @@ namespace NodeEditorFramework.Utilities
 
 		#region Popups
 
-		// TODO: Implement RT Popup
+
 
 		public static System.Enum EnumPopup (System.Enum selected) 
 		{

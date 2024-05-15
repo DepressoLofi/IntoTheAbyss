@@ -18,6 +18,8 @@ public class PlayerData
     public bool levelFour;
     public int levelFourScore;
 
+    public bool allLevel;
+
     public PlayerData(GameManager GameManager)
     {
 
@@ -32,6 +34,8 @@ public class PlayerData
 
         levelFour = GameManager.levelFour;
         levelFourScore = GameManager.levelFourScore;
+
+        allLevel = GameManager.allLevel;
 
     }
 }

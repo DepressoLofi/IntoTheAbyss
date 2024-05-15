@@ -213,7 +213,7 @@ namespace NodeEditorFramework
 
 		[EventHandlerAttribute (EventType.MouseDown)]
 		private static void HandleConnectionDrawing (NodeEditorInputInfo inputInfo) 
-		{ // TODO: Revamp Multi-Multi knob editing
+		{
 			NodeEditorState state = inputInfo.editorState;
 			if (inputInfo.inputEvent.button == 0 && state.focusedConnectionKnob != null)
 			{ // Left-Clicked on a ConnectionKnob, handle editing

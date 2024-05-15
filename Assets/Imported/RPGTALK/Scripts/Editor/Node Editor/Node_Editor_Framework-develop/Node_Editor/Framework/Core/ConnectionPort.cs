@@ -160,7 +160,7 @@ namespace NodeEditorFramework
 			{ // Recursive
 				if (!port.body.allowsLoopRecursion (body))
 				{
-					// TODO: Generic Notification
+
 					Debug.LogWarning ("Cannot apply connection: Recursion detected!");
 					return false;
 				}

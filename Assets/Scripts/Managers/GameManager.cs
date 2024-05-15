@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public bool levelFour = false;
     public int levelFourScore = 0;
 
+    public bool allLevel = false;
+
     public int newStar = 0;
     public int finishedLevel;
 
@@ -82,10 +84,11 @@ public class GameManager : MonoBehaviour
                 newStar = NewStarGained(stars, levelFourScore);
                 
             }
+            allLevel = true;
             
         }
         finishedLevel = levelNum;
-        Debug.Log(newStar);
+
 
         
 

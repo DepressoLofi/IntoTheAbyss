@@ -9,6 +9,7 @@ TagManager:
   - Monster
   - Star
   - Projectile
+  - bgm
   layers:
   - Default
   - TransparentFX
