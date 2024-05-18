@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: M_BaseData
   m_EditorClassIdentifier: 
   hitPoint: 2
-  wallCheckDistance: 0.2
+  wallCheckDistance: 0.5
   ledgeCheckDistance: 0.4
   agroDistance: 3
   maxAgroDistance: 10
