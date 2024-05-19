@@ -1,4 +1,4 @@
-# LAP-IntoTheAbyss
+# Project-IntoTheAbyss
 Myanmar Institute of Theology, LAP program, (Bars)
 20 batch, Final Year Game Project, Year - 2024
 
