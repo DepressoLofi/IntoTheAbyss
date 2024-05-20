@@ -10,4 +10,4 @@ Myanmar Institute of Theology, LAP program, (Bars)
 - He finally got the stick went back to the surface with the stick.
 - Then, he found his owner crying over his dead body and he realized that he’s already dead when he went into the rabbit hole.
 
-## You May have many best friends but your dog only has one.
+## A Dog journey to get his master's love back.
