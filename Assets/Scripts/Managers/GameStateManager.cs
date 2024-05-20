@@ -12,6 +12,8 @@ public class GameStateManager : MonoBehaviour
     public bool freeze;
     public bool havePower;
 
+    public bool storyTelling;
+
     private void Awake()
     {
         if (Instance == null)
@@ -58,5 +60,17 @@ public class GameStateManager : MonoBehaviour
         canInput = true;
         freeze = false;
 
+    }
+
+    public void InStoryTelling()
+    {
+        storyTelling = true;
+        StartCoroutine(storyTellingTime());
+    }
+
+    IEnumerator storyTellingTime()
+    {
+        yield return Helpers.GetWait(2f);
+        storyTelling = false;
     }
 }
