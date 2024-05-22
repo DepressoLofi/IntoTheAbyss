@@ -12,7 +12,7 @@ public class Puppy : MonoBehaviour
 
     [Header("Collect")]
     public int star;
-    public InGameUI starSystem;
+    public InGameUI inGameUi;
 
     public SkinnedMeshRenderer meshRenderer;
     public GameObject flesh;
@@ -50,6 +50,12 @@ public class Puppy : MonoBehaviour
                 SoundManager.PlaySound(SoundType.PUPPYPOP, 0.5f);
                 Destroy(vfx, 0.9f);
             }
+            if (inGameUi != null)
+            {
+                inGameUi.UpdateHeartCount(lifeCount);
+            }
+
+
 
             GameStateManager.Instance.PuppyDied();
         }
@@ -92,9 +98,9 @@ public class Puppy : MonoBehaviour
             Star starProps = other.GetComponent<Star>();
             starProps.StarCollected();
             star++;
-            if (starSystem != null)
+            if (inGameUi != null)
             {
-                starSystem.IncreaseStarCount(star);
+                inGameUi.IncreaseStarCount(star);
             }
         }
     }

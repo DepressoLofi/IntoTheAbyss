@@ -4796,7 +4796,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7398913
+      value: -2.21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
         type: 3}
@@ -69524,32 +69524,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4595999
+      value: 1.5241141
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4596
+      value: 1.5241143
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4595999
+      value: 1.5241141
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.290199
+      value: 15.143
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7398913
+      value: -0.34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -53.646187
+      value: -56.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
         type: 3}
@@ -71346,7 +71346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 3, y: 2.5, z: 0.9999991}
+  m_TrackedObjectOffset: {x: 3, y: 2.5, z: 0.9999999}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0

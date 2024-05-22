@@ -8,6 +8,7 @@ public class Star : MonoBehaviour
     public GameObject burstPrefab;
 
     public PlayableDirector showStory;
+    public float storyTime = 5.5f;
 
     private void Update()
     {
@@ -17,8 +18,10 @@ public class Star : MonoBehaviour
     {
         var burst = Instantiate(burstPrefab, transform.position, transform.rotation);
         Destroy(burst, 5f);
-        Destroy(gameObject);
+        
         SoundManager.PlaySound(SoundType.STAR, 0.8f);
+        GameStateManager.Instance.InStoryTelling(storyTime);
+
         if (showStory != null)
         {
             showStory.Play();
@@ -26,5 +29,6 @@ public class Star : MonoBehaviour
         {
             Debug.Log("Need to add director for the star");
         }
+        Destroy(gameObject);
     }
 }

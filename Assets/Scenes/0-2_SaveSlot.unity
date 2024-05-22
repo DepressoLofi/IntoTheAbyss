@@ -1747,7 +1747,18 @@ MonoBehaviour:
   - {fileID: 1002936492}
   - {fileID: 88439717}
   - {fileID: 1611972419}
+  levelNum:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  starNum:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   saveIds: 010000000200000003000000
+  transition: {fileID: 0}
+  Modal: {fileID: 0}
+  bgm: {fileID: 0}
 --- !u!114 &1365915103
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,13 +6,18 @@ public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance = null;
 
+    // related to player
     private GameObject player;
-
     public bool canInput;
     public bool freeze;
     public bool havePower;
 
-    public bool storyTelling;
+    // related to star and story
+    public InGameUI gameUI;
+
+    // related to mini menu
+    public bool gamePaused;
+
 
     private void Awake()
     {
@@ -47,6 +52,18 @@ public class GameStateManager : MonoBehaviour
         canInput = false;
     }
 
+    public void Resume()
+    {
+        canInput = true;
+        gamePaused = false;
+    }
+
+    public void Pause()
+    {
+        canInput = false;
+        gamePaused = true;
+    }
+
     public void PuppyDied()
     {
         canInput = false;
@@ -62,15 +79,15 @@ public class GameStateManager : MonoBehaviour
 
     }
 
-    public void InStoryTelling()
+    public void InStoryTelling(float storyTime)
     {
-        storyTelling = true;
-        StartCoroutine(storyTellingTime());
+        gameUI.HideUi();
+        StartCoroutine(StoryTellingTime(storyTime));
     }
 
-    IEnumerator storyTellingTime()
+    IEnumerator StoryTellingTime(float storyTime)
     {
-        yield return Helpers.GetWait(2f);
-        storyTelling = false;
+        yield return Helpers.GetWait(storyTime);
+        gameUI.ShowUi();
     }
 }
