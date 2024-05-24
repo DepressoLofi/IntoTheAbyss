@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/2-1_CliffScene.unity
     guid: 181325ef2b24e514ab7508f40700f1b3
   - enabled: 1
+    path: Assets/Scenes/DieScene.unity
+    guid: d5e29caaae0892644bde72de14685a7b
+  - enabled: 1
     path: Assets/Scenes/1-1_TheCave.unity
     guid: 80b12d0aa9f3e76459770212f6591e04
   - enabled: 1

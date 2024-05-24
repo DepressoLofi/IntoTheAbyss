@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class GameManager : MonoBehaviour
 
     public int newStar = 0;
     public int finishedLevel;
+
+    public string currentScene;
 
     public int NewStarGained(int stars, int levelStar)
     {
@@ -88,10 +91,10 @@ public class GameManager : MonoBehaviour
             
         }
         finishedLevel = levelNum;
+    }
 
-
-        
-
-
+    public void GetActiveScene()
+    {
+        currentScene = SceneManager.GetActiveScene().name;
     }
 }

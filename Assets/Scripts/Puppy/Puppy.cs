@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Puppy : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class Puppy : MonoBehaviour
     {
         alive = true;
         lastCheckPoint = transform.position;
+
+        GameManager.Instance.GetActiveScene();
     }
 
     public void SetCheckpoint(Vector3 newPoint)
@@ -68,8 +71,11 @@ public class Puppy : MonoBehaviour
         }
         else
         {
-            //add game over script such as scene transition
-            Debug.Log("You ran out of life");
+            //TODO:: add scene transistion when died 
+
+            GameOver();
+            
+
         }
 
     }
@@ -113,5 +119,9 @@ public class Puppy : MonoBehaviour
         }
     }
 
+    private void GameOver()
+    {
+        SceneManager.LoadScene("DieScene");
+    }
 
 }
