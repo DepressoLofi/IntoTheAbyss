@@ -9,7 +9,7 @@ public class DeadMenu : MonoBehaviour
     public GameObject quoteBox;
     public TextMeshProUGUI quote;
 
-    public string backQuote = "It's okay to rest when you are tired. You can try again tomorrow.";
+    public string backQuote = "It's okay to rest when you are tired. You can always try again tomorrow.";
     public string retryQuote = "Don't give up!";
 
     public BgMusic bgm;

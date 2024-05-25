@@ -217,7 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quoteBox: {fileID: 809078563}
   quote: {fileID: 1148427083}
-  backQuote: It's okay to rest when you are tired. You can try again tomorrow.
+  backQuote: It's okay to rest when you are tired. You can always try again tomorrow.
   retryQuote: Don't give up!
   bgm: {fileID: 649474410}
   transition: {fileID: 1934936292}
@@ -995,8 +995,8 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a4e9d58cbccafce4db347c97047b172e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 0.7
+  m_Volume: 0.7
+  m_Pitch: 0.75
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -1240,7 +1240,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: bf059b8044ef3024e86decc3d749c30a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.4
-  m_Pitch: 1.5
+  m_Pitch: 0.9
   Loop: 0
   Mute: 0
   Spatialize: 0

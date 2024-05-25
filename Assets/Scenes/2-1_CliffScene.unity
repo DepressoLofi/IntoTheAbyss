@@ -6232,7 +6232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196800473}
   m_LocalRotation: {x: 0.06162845, y: -0.70441604, z: 0.06162845, w: 0.70441604}
-  m_LocalPosition: {x: 12.84808, y: 22.016483, z: -35.300003}
+  m_LocalPosition: {x: 12.848079, y: 22.016478, z: -453.40005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23050,7 +23050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 3, y: 2.5, z: -1}
+  m_TrackedObjectOffset: {x: 3, y: 2.5, z: -0.9999977}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -43916,7 +43916,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287652413}
   m_LocalRotation: {x: 0.06162845, y: -0.70441604, z: 0.06162845, w: 0.70441604}
-  m_LocalPosition: {x: 12.84808, y: 22.016483, z: -35.300003}
+  m_LocalPosition: {x: 12.848079, y: 22.016478, z: -453.40005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49039,7 +49039,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: cb4219c3dddd1dd49a6383562abe5b80, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -55854,7 +55854,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6850748106626495753, guid: c3e36f73836c0ea4a8d2c9b583a35fc5,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: c2ce51d3a688cbb4ab62b5b3315c9bb2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 17c0e0e34e4aff54da8f0b1d846fa6ec, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -63599,7 +63599,7 @@ PrefabInstance:
     - target: {fileID: 7385646980205285981, guid: 339c986054ba6ae4f8ff172995dff04f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -34.3
+      value: -452.4
       objectReference: {fileID: 0}
     - target: {fileID: 7385646980205285981, guid: 339c986054ba6ae4f8ff172995dff04f,
         type: 3}
