@@ -20,7 +20,7 @@ public class Star : MonoBehaviour
         Destroy(burst, 5f);
         
         SoundManager.PlaySound(SoundType.STAR, 0.8f);
-        // GameStateManager.Instance.InStoryTelling(storyTime);
+        GameStateManager.Instance.InStoryTelling(storyTime);
 
         if (showStory != null)
         {

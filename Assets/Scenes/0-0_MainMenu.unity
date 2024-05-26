@@ -15246,7 +15246,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0.3764706}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_HighlightedColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
@@ -15719,7 +15719,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0, g: 0, b: 0, a: 0.3764706}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_HighlightedColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
@@ -16151,8 +16151,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190212
-  m_fontColor: {r: 0.5188679, g: 0, b: 0, a: 1}
+    rgba: 4278190167
+  m_fontColor: {r: 0.33962262, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -16175,7 +16175,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -16343,7 +16343,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0.3764706}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_HighlightedColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
@@ -17064,7 +17064,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0.3764706}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_HighlightedColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
@@ -18573,7 +18573,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0, g: 0, b: 0, a: 0.3764706}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_HighlightedColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
@@ -18727,8 +18727,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190212
-  m_fontColor: {r: 0.5188679, g: 0, b: 0, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -18751,7 +18751,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -19835,7 +19835,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0.3764706}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_HighlightedColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
@@ -20955,7 +20955,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278193026
-  m_fontColor: {r: 0.509434, g: 0.04195339, b: 0, a: 1}
+  m_fontColor: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -21085,7 +21085,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0.3764706}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_HighlightedColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
@@ -22087,7 +22087,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0, g: 0, b: 0, a: 0.3764706}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_HighlightedColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
@@ -23528,7 +23528,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0.3764706}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+    m_HighlightedColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5019608}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
@@ -24405,7 +24405,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278193026
-  m_fontColor: {r: 0.509434, g: 0.04195339, b: 0, a: 1}
+  m_fontColor: {r: 0.7921569, g: 0.7921569, b: 0.7921569, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -25410,7 +25410,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278193026
-  m_fontColor: {r: 0.509434, g: 0.04195339, b: 0, a: 1}
+  m_fontColor: {r: 0.7921569, g: 0.7921569, b: 0.7921569, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -26665,6 +26665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossFade
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937595027156829045, guid: 0af38d1e7c4262447be5f4492ce47fa4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1937595027156829055, guid: 0af38d1e7c4262447be5f4492ce47fa4,
         type: 3}

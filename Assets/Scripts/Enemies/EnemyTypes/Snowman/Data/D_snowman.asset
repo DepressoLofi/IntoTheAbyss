@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: D_snowman
   m_EditorClassIdentifier: 
   hitPoint: 2
-  shootTime: 0.5
+  shootTime: 0.6
   diePrefab: {fileID: 5400434478881440056, guid: 4853e9df356264f439f6dffc7efc528b,
     type: 3}

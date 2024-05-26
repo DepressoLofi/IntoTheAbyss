@@ -152,7 +152,7 @@ Transform:
   - {fileID: 4819795065965660561}
   - {fileID: 1670382588}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 149
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &577052272
 CapsuleCollider:
@@ -174,9 +174,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.2330458
-  m_Height: 5.642329
+  m_Height: 5.358223
   m_Direction: 1
-  m_Center: {x: -0.08286734, y: 1.1507831, z: -0.010545519}
+  m_Center: {x: -0.08286734, y: 1.2928362, z: -0.010545519}
 --- !u!54 &577052271
 Rigidbody:
   m_ObjectHideFlags: 0
