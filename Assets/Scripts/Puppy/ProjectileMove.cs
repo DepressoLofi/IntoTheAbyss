@@ -6,7 +6,7 @@ public class ProjectileMove : MonoBehaviour
 {
     public float speed;
     public GameObject vfxPrefab;
-
+    public GameObject hitPrefab;
     private void Start()
     {
         if (vfxPrefab != null)
@@ -38,9 +38,9 @@ public class ProjectileMove : MonoBehaviour
         Vector3 pos = contact.point;
         var psMuzzle = vfxPrefab.GetComponent<ParticleSystem>();
 
-        if (vfxPrefab != null)
+        if (hitPrefab != null)
         {
-            var hitVFX = Instantiate(vfxPrefab, pos, rot);
+            var hitVFX = Instantiate(hitPrefab, pos, rot);
             SoundManager.PlaySound(SoundType.PUPPYSHOOTHIT, 1f);
             Destroy(hitVFX, 0.8f);
         }
