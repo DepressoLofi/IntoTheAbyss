@@ -9901,3 +9901,5 @@ MonoBehaviour:
   speed: 20
   vfxPrefab: {fileID: 8881547005911200944, guid: ce31352f171f7ec4b95176c69790b5b6,
     type: 3}
+  hitPrefab: {fileID: 8881547005911200944, guid: 048b6c91bc0a6b34ca1483b716ebf575,
+    type: 3}
