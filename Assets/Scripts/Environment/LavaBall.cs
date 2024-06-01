@@ -6,11 +6,15 @@ public class LavaBall : MonoBehaviour
 {
 
     [SerializeField] private float force;
+    [SerializeField] private float delayTime = 1f;
 
     private Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.constraints |= RigidbodyConstraints.FreezePositionY;
+        StartCoroutine(FirstJump(delayTime));
+
     }
 
 
@@ -26,6 +30,15 @@ public class LavaBall : MonoBehaviour
     void Jump()
     {
         rb.velocity = Vector3.up * force;
+    }
+
+    IEnumerator FirstJump(float delayTime)
+    {
+        
+        yield return Helpers.GetWait(delayTime);
+        rb.constraints &= ~(RigidbodyConstraints.FreezePositionY);
+        Jump();
+
     }
 
     IEnumerator FreezeAndJump()
