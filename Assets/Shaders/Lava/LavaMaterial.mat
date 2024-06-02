@@ -84,5 +84,5 @@ Material:
     - _Layer2Speed: {r: 0.0003, g: 0.0003, b: 0, a: 0}
     - _OutlineColor: {r: 0.28295708, g: 0.23835832, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _emission: {r: 0.11345841, g: 0.0115438355, b: 0, a: 0}
+    - _emission: {r: 0.014182301, g: 0.0014429794, b: 0, a: 0}
   m_BuildTextureStacks: []
