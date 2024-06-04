@@ -23693,7 +23693,7 @@ MonoBehaviour:
   m_LookaheadIgnoreY: 0
   m_XDamping: 2
   m_YDamping: 2
-  m_ZDamping: 1
+  m_ZDamping: 2
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
@@ -44623,7 +44623,7 @@ MonoBehaviour:
     FocusDistance: 10
     m_SensorSize: {x: 1, y: 1}
   m_Transitions:
-    m_BlendHint: 0
+    m_BlendHint: 1
     m_InheritPosition: 0
     m_OnCameraLive:
       m_PersistentCalls:
