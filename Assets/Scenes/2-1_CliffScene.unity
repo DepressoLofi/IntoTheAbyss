@@ -20893,7 +20893,7 @@ PrefabInstance:
     - target: {fileID: 8128255552234175557, guid: 633cd7d7c4a0a0b45aeb2f786c7560d1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.28
+      value: 3.24
       objectReference: {fileID: 0}
     - target: {fileID: 8128255552234175557, guid: 633cd7d7c4a0a0b45aeb2f786c7560d1,
         type: 3}
@@ -23687,7 +23687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 3, y: 2.5, z: 0.9999993}
+  m_TrackedObjectOffset: {x: 3, y: 2.5, z: 0.9999995}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
