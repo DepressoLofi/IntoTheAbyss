@@ -21,10 +21,10 @@ MonoBehaviour:
     m_Value: 0.9
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   scatter:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 1
   clamp:
     m_OverrideState: 1
     m_Value: 65472
@@ -60,9 +60,9 @@ MonoBehaviour:
   m_Name: Resting
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 5626236186838500056}
   - {fileID: -6936660368245505707}
---- !u!114 &5626236186838500056
+  - {fileID: 8946741682796984353}
+--- !u!114 &8946741682796984353
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,4 +77,4 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
