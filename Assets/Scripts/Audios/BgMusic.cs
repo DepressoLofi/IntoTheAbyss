@@ -5,26 +5,12 @@ using UnityEngine;
 public class BgMusic : MonoBehaviour
 {
     private AudioSource bgmAudioSource;
-    private GameObject[] musicObj;
     private float timer = 0f;
-    private float fadeDuration = 1f;
+    private readonly float fadeDuration = 1f;
 
-
-
-    // Start is called before the first frame update
     void Awake()
     {
-        musicObj = GameObject.FindGameObjectsWithTag("bgm");
-
-        if (musicObj.Length > 1)
-        {
-            Destroy(this.gameObject);
-        }
-
-
         bgmAudioSource = GetComponent<AudioSource>();
-
-
     }
 
     public void Fade()
