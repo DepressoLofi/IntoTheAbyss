@@ -4827,7 +4827,7 @@ MonoBehaviour:
   animatorBooleanName: 
   animatorIntName: 
   cutscenePosition: 2
-  textSpeed: 50
+  textSpeed: 25
   currentChar: 0
   variables: []
   shouldUsePhotos: 0
@@ -4850,7 +4850,7 @@ MonoBehaviour:
   sprites: []
   spritesUsed: []
   tmpSpriteAtlas: Default Sprite Asset
-  actualTextSpeed: 50
+  actualTextSpeed: 25
   isPlaying: 1
   isAnimating: 1
   choicePrefab: {fileID: 0}
@@ -5425,7 +5425,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 37.04
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -5451,7 +5451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366613102}
   m_LocalRotation: {x: 0.08954219, y: -0.70141447, z: 0.08954219, w: 0.70141447}
-  m_LocalPosition: {x: -16.012705, y: 3.8922477, z: 21.32625}
+  m_LocalPosition: {x: 5.794705, y: 5.0499554, z: -7.989001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5721,6 +5721,8 @@ PlayableDirector:
     value: {fileID: 1281254614}
   - key: {fileID: 8108045218640101945, guid: 2e12babaeaa31ce419485cdf91f66d0b, type: 2}
     value: {fileID: 645729988}
+  - key: {fileID: -364085552557869140, guid: 2e12babaeaa31ce419485cdf91f66d0b, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1432629861
@@ -6946,7 +6948,7 @@ MonoBehaviour:
     his eyes but the darkness makes him cold. There is this unbearable ache in his
     chest, as if something just shattered inside of him. Will the little dog get
     his owner''s love back? He ponders. As tears run down from his eyes, he hopes
-    to get his owner''s love back, like in those '
+    to get his owner''s love back, like in those days when he was still young and '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c89a296065faca4492e525ab4652e88, type: 2}
   m_sharedMaterial: {fileID: 7264029833196796967, guid: 3c89a296065faca4492e525ab4652e88,
@@ -8980,7 +8982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: -3.981721, y: 0.00913924, z: 2.521}
+  m_TrackedObjectOffset: {x: -3.884583, y: 0.0577082, z: 2.521}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -9049,7 +9051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605843339435224956}
   m_LocalRotation: {x: 0.08954219, y: -0.70141447, z: 0.08954219, w: 0.70141447}
-  m_LocalPosition: {x: -16.012705, y: 3.8922477, z: 21.32625}
+  m_LocalPosition: {x: 5.794705, y: 5.0499554, z: -7.989001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
