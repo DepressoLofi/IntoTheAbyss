@@ -91,6 +91,7 @@ public class GameManager : MonoBehaviour
             
         }
         finishedLevel = levelNum;
+        
     }
 
     public void GetActiveScene()

@@ -12,6 +12,7 @@ public class SceneTransition : MonoBehaviour
     {
         GameManager.Instance.LevelComplete(levelNum, starCollected);
         SceneManager.LoadScene(scene);
+
     }
 
     private void OnTriggerEnter(Collider other)

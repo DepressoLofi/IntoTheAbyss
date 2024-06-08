@@ -19,7 +19,7 @@ namespace RPGTALK.Texts
         public Text UIText;
         public bool hasUIText;
 #if RPGTalk_TMP
-        public TextMeshProUGUI TMPText;
+        public TMP_Text TMPText;
 #endif
         public bool errorSetting;
 
@@ -35,13 +35,15 @@ namespace RPGTALK.Texts
             }
 
 #if RPGTalk_TMP
-            TextMeshProUGUI isTMP = obj.GetComponent<TextMeshProUGUI>();
+            TMP_Text isTMP = obj.GetComponent<TMP_Text>();
             if (isTMP)
             {
                 TMPText = isTMP;
                 errorSetting = false;
                 return;
             }
+
+
 #endif
             errorSetting = true;
         }

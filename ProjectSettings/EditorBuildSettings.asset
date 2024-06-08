@@ -6,33 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
     path: Assets/Scenes/0-0_MainMenu.unity
     guid: c2b5c9e3328ad95419def6814d60301c
-  - enabled: 1
-    path: Assets/Scenes/0-2_SaveSlot.unity
-    guid: b5929b24fd3d0d74e987dc5b83518ab3
-  - enabled: 1
-    path: Assets/Scenes/LevelSelection.unity
-    guid: f098cbc747573f240b624a3ab041b0a5
   - enabled: 1
     path: Assets/Scenes/0-1_FirstScene.unity
     guid: ef6564844d5923b49920efba15e48b4c
   - enabled: 1
-    path: Assets/Scenes/2-1_CliffScene.unity
-    guid: 181325ef2b24e514ab7508f40700f1b3
-  - enabled: 1
-    path: Assets/Scenes/DieScene.unity
-    guid: d5e29caaae0892644bde72de14685a7b
+    path: Assets/Scenes/LevelSelection.unity
+    guid: f098cbc747573f240b624a3ab041b0a5
   - enabled: 1
     path: Assets/Scenes/1-1_TheCave.unity
     guid: 80b12d0aa9f3e76459770212f6591e04
   - enabled: 1
+    path: Assets/Scenes/2-1_CliffScene.unity
+    guid: 181325ef2b24e514ab7508f40700f1b3
+  - enabled: 1
     path: Assets/Scenes/3-1_ChrismasScene.unity
     guid: df6a6b853e178c3488cf96ed5c3d4673
   - enabled: 1
+    path: Assets/Scenes/RestingCutscene.unity
+    guid: 15a97c72a70194c49b21b8634a4a7790
+  - enabled: 1
+    path: Assets/Scenes/RestingScene.unity
+    guid: 57df4b754ed58ee41868007cffeecc1f
+  - enabled: 1
     path: Assets/Scenes/4-1_VolcanicScene.unity
     guid: a4b0a20d0cce41144b97c429876aabd4
+  - enabled: 1
+    path: Assets/Scenes/DieScene.unity
+    guid: d5e29caaae0892644bde72de14685a7b
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/0-2_SaveSlot.unity
+    guid: b5929b24fd3d0d74e987dc5b83518ab3
   m_configObjects: {}

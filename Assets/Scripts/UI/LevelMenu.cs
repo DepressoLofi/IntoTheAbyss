@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LevelMenu : MonoBehaviour
 {
+    private void Start()
+    {
+        SaveSystem.SaveData(GameManager.Instance, SaveID.saveID);
+    }
     public void Back()
     {
         SaveSystem.SaveData(GameManager.Instance, SaveID.saveID);
