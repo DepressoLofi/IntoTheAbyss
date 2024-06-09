@@ -33,6 +33,12 @@ EditorBuildSettings:
     path: Assets/Scenes/4-1_VolcanicScene.unity
     guid: a4b0a20d0cce41144b97c429876aabd4
   - enabled: 1
+    path: Assets/Scenes/5-1_StickScene.unity
+    guid: fbc997e8351d7e442bb315e995fcd123
+  - enabled: 1
+    path: Assets/Scenes/5-2_EndScene.unity
+    guid: cf995cfe036daf94c8dbf224e349c2e9
+  - enabled: 1
     path: Assets/Scenes/DieScene.unity
     guid: d5e29caaae0892644bde72de14685a7b
   - enabled: 1
