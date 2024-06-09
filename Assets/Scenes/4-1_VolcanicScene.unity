@@ -14527,7 +14527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 3, y: 2.5, z: 0.9999989}
+  m_TrackedObjectOffset: {x: 3, y: 2.5, z: 0.9999999}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -15526,6 +15526,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659272268985797987, guid: 3f9de49ee8815364b8844e8279177a47,
+        type: 3}
+      propertyPath: m_Mass
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2659272268985797991, guid: 3f9de49ee8815364b8844e8279177a47,
         type: 3}
@@ -17071,6 +17076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659272268985797987, guid: 3f9de49ee8815364b8844e8279177a47,
+        type: 3}
+      propertyPath: m_Mass
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2659272268985797991, guid: 3f9de49ee8815364b8844e8279177a47,
         type: 3}
