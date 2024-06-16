@@ -21880,6 +21880,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7cde7811ba4031479ae2ec160fbffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 558208147}
+  bgm: {fileID: 876479256}
 --- !u!4 &1408895140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1288633030, guid: d052e3fbbc0929a408e720b491187572,
