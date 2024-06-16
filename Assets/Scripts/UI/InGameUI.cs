@@ -83,6 +83,7 @@ public class InGameUI : MonoBehaviour
 
     private void Pause()
     {
+        Cursor.visible = true;
         menu.SetActive(true);
         Time.timeScale = 0f;
         GameStateManager.Instance.Pause();
@@ -90,6 +91,7 @@ public class InGameUI : MonoBehaviour
 
     private void Resume()
     {
+        Cursor.visible = false;
         menu.SetActive(false);
         Time.timeScale = 1f;
         GameStateManager.Instance.Resume();

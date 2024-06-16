@@ -1209,7 +1209,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 34b4decf5daf6d745abd3b8441384300, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5003,8 +5003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mini: {fileID: 5544215397071911708}
-  transition: {fileID: 0}
-  bgm: {fileID: 0}
+  transition: {fileID: 1345626149}
+  bgm: {fileID: 765829335}
   audioMixer: {fileID: 24100000, guid: c3e36f73836c0ea4a8d2c9b583a35fc5, type: 2}
   bgmSlider: {fileID: 7609299365572098086}
   sfxSlider: {fileID: 3888588659679187680}

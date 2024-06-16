@@ -28,6 +28,7 @@ public class Puppy : MonoBehaviour
     {
         alive = true;
         lastCheckPoint = transform.position;
+        Cursor.visible = false;
 
         GameManager.Instance.GetActiveScene();
     }
@@ -71,11 +72,7 @@ public class Puppy : MonoBehaviour
         }
         else
         {
-            //TODO:: add scene transistion when died 
-
-            GameOver();
-            
-
+            GameStateManager.Instance.GameOver();
         }
 
     }
@@ -89,9 +86,7 @@ public class Puppy : MonoBehaviour
         GameStateManager.Instance.PuppyRevived();
         puppyCollider.enabled = true;
         meshRenderer.enabled = true;
-
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -119,9 +114,6 @@ public class Puppy : MonoBehaviour
         }
     }
 
-    private void GameOver()
-    {
-        SceneManager.LoadScene("DieScene");
-    }
+    
 
 }

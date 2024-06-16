@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class GameStateManager : MonoBehaviour
 
     // related to mini menu
     public bool gamePaused;
+
+    //When Puppy died
+    public Animator transition;
+    public BgMusic bgm;
 
 
     private void Awake()
@@ -76,7 +81,23 @@ public class GameStateManager : MonoBehaviour
     {
         canInput = true;
         freeze = false;
+    }
 
+    public void GameOver()
+    {
+        
+        StartCoroutine(LoadGameOver());
+    }
+
+    IEnumerator LoadGameOver()
+    {
+        bgm.Fade();
+        yield return Helpers.GetWait(2f);
+        
+        transition.SetTrigger("Start");
+        yield return Helpers.GetWait(1f);
+        Cursor.visible = true;
+        SceneManager.LoadScene("DieScene");
     }
 
     public void InStoryTelling(float storyTime)

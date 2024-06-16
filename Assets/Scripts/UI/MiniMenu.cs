@@ -48,6 +48,7 @@ public class MiniMenu : MonoBehaviour
 
     public void ResumeGame()
     {
+        Cursor.visible = false;
         mini.SetActive(false);
         Time.timeScale = 1f;
         GameStateManager.Instance.Resume();
@@ -56,18 +57,20 @@ public class MiniMenu : MonoBehaviour
 
     public void BackToLevelSelection()
     {
-        // TODO:: add scene transition in mini menu back to selection
+        bgm.Fade();
+        Time.timeScale = 1f;
+        StartCoroutine(LoadLevelSelection());
+    }
+
+    IEnumerator LoadLevelSelection()
+    {
+        transition.SetTrigger("Start");
+
+        yield return Helpers.GetWait(1f);
+
         SceneManager.LoadScene("LevelSelection");
     }
 
-    public void BackToMainMenu()
-    {
-        // TODO:: add scene transition in mini menu back to main menu
-        SaveSystem.SaveData(GameManager.Instance, SaveID.saveID);
-        SceneManager.LoadScene("0-0_MainMenu");
-    }
-
-    
     public void SetBgm(float volume)
     {
         audioMixer.SetFloat("bgm", Mathf.Log10(volume) * 20);

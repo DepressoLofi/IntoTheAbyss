@@ -8,11 +8,23 @@ public class SceneTransition : MonoBehaviour
     [SerializeField] private int levelNum;
     private int starCollected;
     [SerializeField] private string scene = "LevelSelection";
-    private void LoadLevelSelection()
+
+    public Animator transition;
+    public BgMusic bgm;
+
+    private void FinishLevel()
     {
         GameManager.Instance.LevelComplete(levelNum, starCollected);
-        SceneManager.LoadScene(scene);
+        bgm.Fade();
+        Cursor.visible = true;
+        StartCoroutine(LoadLevelSelection());
+    }
 
+    IEnumerator LoadLevelSelection()
+    {
+        transition.SetTrigger("Start");
+        yield return Helpers.GetWait(1f);
+        SceneManager.LoadScene(scene);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,7 +36,7 @@ public class SceneTransition : MonoBehaviour
             {
                 starCollected = puppy.star;   
             }
-            LoadLevelSelection();
+            FinishLevel();
         }
     }
 }
