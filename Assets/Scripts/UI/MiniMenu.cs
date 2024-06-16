@@ -8,8 +8,10 @@ using UnityEngine.UI;
 public class MiniMenu : MonoBehaviour
 {
     public GameObject mini;
+    public Animator transition;
+    public BgMusic bgm;
 
-    
+
     public AudioMixer audioMixer;
     public Slider bgmSlider;
     public Slider sfxSlider;
@@ -79,6 +81,11 @@ public class MiniMenu : MonoBehaviour
         PlayerPrefs.SetFloat(sfxKey, volume);
         PlayerPrefs.Save();
     }
-    
 
+
+    // For mini menu in level selection
+    public void CloseMiniMenu()
+    {
+        mini.SetActive(false);
+    }
 }

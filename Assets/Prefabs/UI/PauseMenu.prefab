@@ -907,6 +907,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mini: {fileID: 858776296641460646}
+  transition: {fileID: 0}
+  bgm: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: c3e36f73836c0ea4a8d2c9b583a35fc5, type: 2}
   bgmSlider: {fileID: 3351337346974464668}
   sfxSlider: {fileID: 8281262310876794970}
@@ -972,7 +974,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1000
+  m_SortingOrder: 50
   m_TargetDisplay: 0
 --- !u!114 &858776296721755103
 MonoBehaviour:

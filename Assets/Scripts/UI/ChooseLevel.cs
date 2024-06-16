@@ -16,6 +16,9 @@ public class ChooseLevel : MonoBehaviour
     public GameObject starPrefab;
     public GameObject newStarPrefab;
 
+    public BgMusic bgm;
+    public Animator transition;
+
     public Button levelButton;
 
     private void Start()
@@ -174,8 +177,17 @@ public class ChooseLevel : MonoBehaviour
 
     public void OpenScene()
     {
+        bgm.Fade();
+        StartCoroutine(LoadLevelScene());     
+    }
+
+    IEnumerator LoadLevelScene()
+    {
+        transition.SetTrigger("Start");
+        yield return Helpers.GetWait(1f);
         SceneManager.LoadScene(levelName);
     }
+
 
 
 }
