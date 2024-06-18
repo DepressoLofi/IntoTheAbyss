@@ -41,7 +41,6 @@ public class MiniMenu : MonoBehaviour
         {
             SetSfx(0f);
         }
-
     }
 
     
@@ -57,7 +56,13 @@ public class MiniMenu : MonoBehaviour
 
     public void BackToLevelSelection()
     {
-        bgm.Fade();
+        if(bgm != null)
+        {
+            bgm.Fade();
+        } else if (UniqueMusic.instance != null)
+        {
+            UniqueMusic.instance.FadeOutMusic();
+        }
         Time.timeScale = 1f;
         StartCoroutine(LoadLevelSelection());
     }

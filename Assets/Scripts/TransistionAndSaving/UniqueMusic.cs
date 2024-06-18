@@ -12,7 +12,7 @@ public class UniqueMusic : MonoBehaviour
     private float initialVolume;
     private float timer = 0f;
 
-    private static UniqueMusic instance;
+    public static UniqueMusic instance;
 
     void Awake()
     {
