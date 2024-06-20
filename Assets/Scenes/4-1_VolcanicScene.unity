@@ -9439,6 +9439,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7123695808740895479, guid: e2eaa428d38ef3e49a4c3db727bebabe,
+        type: 3}
+      propertyPath: bgm
+      value: 
+      objectReference: {fileID: 1755994152}
+    - target: {fileID: 7123695808740895479, guid: e2eaa428d38ef3e49a4c3db727bebabe,
+        type: 3}
+      propertyPath: gameUI
+      value: 
+      objectReference: {fileID: 479210263}
+    - target: {fileID: 7123695808740895479, guid: e2eaa428d38ef3e49a4c3db727bebabe,
+        type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 283958166}
     - target: {fileID: 7262722706338618472, guid: e2eaa428d38ef3e49a4c3db727bebabe,
         type: 3}
       propertyPath: m_Name

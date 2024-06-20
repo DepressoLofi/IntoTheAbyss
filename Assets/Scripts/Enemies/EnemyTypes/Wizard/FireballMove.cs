@@ -18,7 +18,7 @@ public class FireballMove : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (speed != 0)
         {
