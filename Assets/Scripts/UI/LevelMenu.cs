@@ -11,6 +11,7 @@ public class LevelMenu : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = true;
         SaveSystem.SaveData(GameManager.Instance, SaveID.saveID);
     }
 

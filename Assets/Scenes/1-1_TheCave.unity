@@ -889,7 +889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 89.77, y: -3.3}
+  m_AnchoredPosition: {x: 87.64, y: -1.36}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26602778
@@ -912,8 +912,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Watch out! There's a monster. Press "x" to shoot at the monsters. Becareful
-    not to get too close to them.
+  m_text: Watch out! There's a monster. I gave you the power to shoot magic. Press
+    "x" to shoot at the monsters. Becareful not to get too close to them.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb1a49e4a38293749a134616f6c4f36c, type: 2}
   m_sharedMaterial: {fileID: -8467208395374674559, guid: eb1a49e4a38293749a134616f6c4f36c,
@@ -941,8 +941,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 1.459197, z: 11.690015, w: 0}
+  m_margin: {x: 0, y: 1.459197, z: 7.0427675, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -65831,8 +65831,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -65867,7 +65867,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 1.459197, z: 12.178986, w: 0}
+  m_margin: {x: 0, y: 1.459197, z: 11.151201, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -70262,7 +70262,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34.32, y: -0.27}
+  m_AnchoredPosition: {x: 34.5, y: 0.94}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052087224
@@ -70285,7 +70285,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press the "space button" again to double jump while in the air.
+  m_text: Press the "space button" again to double jump while in the air. I gave
+    you the power to double jump.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb1a49e4a38293749a134616f6c4f36c, type: 2}
   m_sharedMaterial: {fileID: -8467208395374674559, guid: eb1a49e4a38293749a134616f6c4f36c,

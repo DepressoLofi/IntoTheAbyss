@@ -12963,7 +12963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 0-3_TheIntro
-  waitSecond: 1
+  waitSecond: 2
   bgm: {fileID: 155183799}
 --- !u!1 &1834684554
 GameObject:
