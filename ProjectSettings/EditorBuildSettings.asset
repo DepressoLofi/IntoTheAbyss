@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/0-1_FirstScene.unity
     guid: ef6564844d5923b49920efba15e48b4c
   - enabled: 1
+    path: Assets/Scenes/0-2_FallingScene.unity
+    guid: 76bd8173754553c4382816d7b199ec70
+  - enabled: 1
     path: Assets/Scenes/0-3_TheIntro.unity
     guid: 13f22091ff92c324fad476436951d1ea
   - enabled: 1
