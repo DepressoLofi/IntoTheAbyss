@@ -1470,7 +1470,7 @@ PrefabInstance:
     - target: {fileID: 1905197558803601351, guid: 441334cfed3cc7949a5d91246467071c,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      value: 16777215
       objectReference: {fileID: 0}
     - target: {fileID: 1905197558803601353, guid: 441334cfed3cc7949a5d91246467071c,
         type: 3}
@@ -1799,7 +1799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfa45717c1e61846a0d11d11eacf625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 5-2_EndScene
+  sceneName: 5-2_FinalScene
 --- !u!4 &1282598334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b20ec8db6a1aa4408322bac72b97fd6,
