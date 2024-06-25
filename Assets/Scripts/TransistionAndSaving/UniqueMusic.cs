@@ -32,7 +32,7 @@ public class UniqueMusic : MonoBehaviour
     private void Update()
     {
         if (SceneManager.GetActiveScene().name != "RestingCutscene" && SceneManager.GetActiveScene().name != "RestingScene" && 
-            SceneManager.GetActiveScene().name != "5-1_StickScene" && SceneManager.GetActiveScene().name != "5-2_EndScene")
+            SceneManager.GetActiveScene().name != "5-1_StickScene" && SceneManager.GetActiveScene().name != "5-2_EndScene" && SceneManager.GetActiveScene().name != "0-1_FirstScene")
         {
             Destroy(this.gameObject);
         }

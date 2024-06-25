@@ -8,7 +8,7 @@ public class UniqueTransition : MonoBehaviour
 
     public Animator transition;
     [SerializeField] string sceneName = "LevelSelection";
-
+    [SerializeField] float waitTime = 2f;
     private void FinishScene()
     {
         
@@ -24,7 +24,7 @@ public class UniqueTransition : MonoBehaviour
     IEnumerator LoadLevelSelection()
     {
         transition.SetTrigger("Start");
-        yield return Helpers.GetWait(2f);
+        yield return Helpers.GetWait(waitTime);
         SceneManager.LoadScene(sceneName);
     }
 
