@@ -7,6 +7,7 @@ public class UniqueTransition : MonoBehaviour
 {
 
     public Animator transition;
+    [SerializeField] string sceneName = "LevelSelection";
 
     private void FinishScene()
     {
@@ -24,7 +25,7 @@ public class UniqueTransition : MonoBehaviour
     {
         transition.SetTrigger("Start");
         yield return Helpers.GetWait(2f);
-        SceneManager.LoadScene("LevelSelection");
+        SceneManager.LoadScene(sceneName);
     }
 
     private void OnTriggerEnter(Collider other)
