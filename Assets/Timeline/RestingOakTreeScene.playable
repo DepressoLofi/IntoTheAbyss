@@ -2118,7 +2118,7 @@ MonoBehaviour:
     txtToParse: {fileID: 4900000, guid: 56524bbdbdea5624cb2a25bc88532a1e, type: 3}
     lineToStart: 3
     lineToBreak: 3
-    textSpeed: 50
+    textSpeed: 30
     pauseUntilTalkEnd: 1
     autoPass: 0
     secondsAutoPass: 0
@@ -2545,7 +2545,7 @@ MonoBehaviour:
     txtToParse: {fileID: 4900000, guid: 56524bbdbdea5624cb2a25bc88532a1e, type: 3}
     lineToStart: 2
     lineToBreak: 2
-    textSpeed: 50
+    textSpeed: 30
     pauseUntilTalkEnd: 1
     autoPass: 0
     secondsAutoPass: 0
@@ -3779,7 +3779,7 @@ MonoBehaviour:
     txtToParse: {fileID: 4900000, guid: 56524bbdbdea5624cb2a25bc88532a1e, type: 3}
     lineToStart: 4
     lineToBreak: 4
-    textSpeed: 50
+    textSpeed: 30
     pauseUntilTalkEnd: 1
     autoPass: 0
     secondsAutoPass: 0
@@ -3850,7 +3850,7 @@ MonoBehaviour:
     txtToParse: {fileID: 4900000, guid: 56524bbdbdea5624cb2a25bc88532a1e, type: 3}
     lineToStart: 5
     lineToBreak: 5
-    textSpeed: 50
+    textSpeed: 30
     pauseUntilTalkEnd: 1
     autoPass: 0
     secondsAutoPass: 0
@@ -4006,7 +4006,7 @@ MonoBehaviour:
     txtToParse: {fileID: 4900000, guid: 56524bbdbdea5624cb2a25bc88532a1e, type: 3}
     lineToStart: 1
     lineToBreak: 1
-    textSpeed: 50
+    textSpeed: 30
     pauseUntilTalkEnd: 1
     autoPass: 0
     secondsAutoPass: 3
@@ -4242,7 +4242,7 @@ MonoBehaviour:
     txtToParse: {fileID: 4900000, guid: 56524bbdbdea5624cb2a25bc88532a1e, type: 3}
     lineToStart: 6
     lineToBreak: 6
-    textSpeed: 50
+    textSpeed: 30
     pauseUntilTalkEnd: 1
     autoPass: 0
     secondsAutoPass: 0

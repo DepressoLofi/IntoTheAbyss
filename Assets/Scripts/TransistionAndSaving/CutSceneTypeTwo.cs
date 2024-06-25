@@ -19,7 +19,14 @@ public class CutSceneTypeTwo : MonoBehaviour
 
     private void OnTimelineStopped(PlayableDirector director)
     {
-        bgm.Fade();
+        if(bgm != null)
+        {
+            bgm.Fade();
+        } else if(UniqueMusic.instance != null)
+        {
+            UniqueMusic.instance.FadeOutMusic();
+        }
+        
         StartCoroutine(LoadNextScene());
     }
     IEnumerator LoadNextScene()

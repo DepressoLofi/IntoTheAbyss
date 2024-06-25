@@ -2188,6 +2188,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7385646979809137938, guid: 339c986054ba6ae4f8ff172995dff04f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dccb2ec99439d6d4c921ebdcc097de5b, type: 2}
     - target: {fileID: 7385646980205285976, guid: 339c986054ba6ae4f8ff172995dff04f,
         type: 3}
       propertyPath: inGameUi
