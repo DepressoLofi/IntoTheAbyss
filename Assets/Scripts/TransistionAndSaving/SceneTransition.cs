@@ -15,8 +15,6 @@ public class SceneTransition : MonoBehaviour
     public Animator transition;
     public BgMusic bgm;
 
-    public PlayableDirector showStory;
-
     private void FinishLevel()
     {
         GameManager.Instance.LevelComplete(levelNum, starCollected);
@@ -28,11 +26,7 @@ public class SceneTransition : MonoBehaviour
     IEnumerator LoadLevelSelection()
     {
         transition.SetTrigger("Start");
-        yield return Helpers.GetWait(1f);
-        if (showStory != null)
-        {
-            showStory.Play();
-        }
+
         yield return Helpers.GetWait(waitSecond);
         SceneManager.LoadScene(scene);
     }

@@ -21,8 +21,8 @@ public class Star : MonoBehaviour
         
         SoundManager.PlaySound(SoundType.STAR, 0.8f);
 
-        //TODO:: to remove comment
-        // GameStateManager.Instance.InStoryTelling(storyTime);
+        
+        GameStateManager.Instance.InStoryTelling(storyTime);
 
         if (showStory != null)
         {

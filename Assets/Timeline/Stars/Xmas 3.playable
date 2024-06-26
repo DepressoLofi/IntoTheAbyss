@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8667727895388940570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479ec74219d674ef8b34abb60a3e4c46, type: 3}
+  m_Name: RPGTalkCinematicClip
+  m_EditorClassIdentifier: 
+  template:
+    txtToParse: {fileID: 4900000, guid: d6a7b75a8ac2ebf45a7d82a93306e092, type: 3}
+    lineToStart: 3
+    lineToBreak: -1
+    textSpeed: 50
+    pauseUntilTalkEnd: 0
+    autoPass: 0
+    secondsAutoPass: 0
 --- !u!114 &-6152580254724954038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,7 +101,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 3.9833333
+        time: 4
         value: 0
         inSlope: 0
         outSlope: 0
@@ -90,7 +110,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5
+        time: 5.016667
         value: -60
         inSlope: 0
         outSlope: 0
@@ -129,7 +149,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 5
+    m_StopTime: 5.016667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -168,7 +188,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 3.9833333
+        time: 4
         value: 0
         inSlope: 0
         outSlope: 0
@@ -177,7 +197,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5
+        time: 5.016667
         value: -60
         inSlope: 0
         outSlope: 0
@@ -248,7 +268,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
-  m_Name: StarOneCave
+  m_Name: Xmas 3
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
@@ -261,26 +281,6 @@ MonoBehaviour:
     m_ScenePreview: 1
   m_DurationMode: 0
   m_MarkerTrack: {fileID: 0}
---- !u!114 &4890633747384014122
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 479ec74219d674ef8b34abb60a3e4c46, type: 3}
-  m_Name: RPGTalkCinematicClip
-  m_EditorClassIdentifier: 
-  template:
-    txtToParse: {fileID: 4900000, guid: c4f5c8e1e26292948b94f2e5948141cf, type: 3}
-    lineToStart: 1
-    lineToBreak: -1
-    textSpeed: 50
-    pauseUntilTalkEnd: 0
-    autoPass: 1
-    secondsAutoPass: 10
 --- !u!74 &6255146006238856559
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -321,7 +321,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 3.9833333
+        time: 4
         value: 0
         inSlope: 0
         outSlope: 0
@@ -330,7 +330,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5
+        time: 5.016667
         value: 60
         inSlope: 0
         outSlope: 0
@@ -369,7 +369,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 5
+    m_StopTime: 5.016667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -408,7 +408,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 3.9833333
+        time: 4
         value: 0
         inSlope: 0
         outSlope: 0
@@ -417,7 +417,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5
+        time: 5.016667
         value: 60
         inSlope: 0
         outSlope: 0
@@ -459,10 +459,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 1.2166666666666666
+    m_Start: 1
     m_ClipIn: 0
-    m_Asset: {fileID: 4890633747384014122}
-    m_Duration: 2.7666666666666666
+    m_Asset: {fileID: -8667727895388940570}
+    m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: 8510625607505999157}
     m_EaseInDuration: 0
